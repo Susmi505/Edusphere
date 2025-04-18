@@ -1,0 +1,15 @@
+.list-quiz{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-quiz button{
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #0F3460;
+}
+.list-quiz h3{
+    color:  #0F3460 !important;
+    margin-bottom: 25px;
+}

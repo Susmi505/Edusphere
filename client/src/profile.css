@@ -1,0 +1,411 @@
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; 
+  gap: 20px;
+  padding: 20px;
+  min-height: 90vh; /* Ensure parent has a height to stretch within */
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #2c4b70;
+  width: 25%;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.profile-image img:hover {
+  transform: scale(1.1);
+}
+
+.profile-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%; 
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.profile-details {
+  text-align: center;
+  font-size: 1rem !important;
+  color: #eee !important;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center; 
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background: #eee;
+  transition: background 0.3s;
+}
+
+.tabs .active {
+  background: #0F3460;
+  color: white;
+}
+
+.user-info {
+  width: 100%;
+  text-align: left;
+  align-items: start;
+}
+
+.user-info label {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.course-info p {
+  display: block;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.user-info input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.profile-btn-div {
+  display: flex;
+  gap: 2rem;
+}
+
+.update-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; /* Increased width for centering */
+  margin: 15px auto 0;
+  padding: 10px;
+  background: #0F3460;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cancel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; /* Increased width for centering */
+  margin: 15px auto 0;
+  padding: 10px;
+  color: #0F3460;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #0F3460;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.update-button:hover {
+  background: #092c50;
+}
+
+.cancel-button:hover {
+  background: #092c50;
+  color: white;
+}
+
+.password-update {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: start;
+  gap: 10px;
+  width: 100%;
+}
+
+.password-input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.password-input-container input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-input-container button {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0F3460;
+  font-weight: bold;
+}
+
+.password-input-container button:hover {
+  color: #092c50;
+}
+
+.update-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #0F3460;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.update-button:hover {
+  background: #092c50;
+}
+
+/* Course Information Tab Styles */
+.course-info {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.course-info h4 {
+  font-size: 1.9rem;
+  color: #0F3460;
+}
+
+.course-info h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.course-info label {
+  font-size: 16px;
+  color: #555;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.course-info input[type="text"],
+.course-info input[type="date"],
+.course-info input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.course-info input[type="text"]:disabled,
+.course-info input[type="date"]:disabled,
+.course-info input[type="number"]:disabled {
+  background-color: #e9e9e9;
+}
+
+.course-info button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.course-info button:hover {
+  background-color: #45a049;
+}
+
+.course-info .message {
+  margin-top: 10px;
+  color: #ff0000;
+  font-size: 14px;
+}
+
+.enrolled-courses-scroll {
+  max-height: 500px; /* or 400px */
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-top: 10px;
+  border-radius: 12px;
+  background-color: #f4f4f4;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.enrolled-courses-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.enrolled-courses-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.enrolled-courses-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.tabs button.active {
+  background-color: #0F3460;
+  color: white;
+}
+
+.tabs button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tabs button:hover {
+  background-color: #f1f1f1;
+}
+
+.tabs button.active:hover {
+  background-color: #0F3460;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+
+
+/* Responsive Adjustments for tablets (1024px and below) */
+@media (max-width: 1024px) {
+  .profile-page {
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .profile-left, .profile-right {
+    width: 90%; 
+    height: auto;
+  }
+  
+
+  .tabs button {
+    font-size: 14px;
+    margin-top: 20px; /* Adjusted margin */
+  }
+
+  .course-info {
+    padding: 20px;
+  }
+
+  .profile-right {
+    margin-bottom: 40px; /* Adjust margin for smaller screens */
+  }
+
+  .password-update {
+    margin-bottom: 100px;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .profile-page {
+    flex-direction: column; /* Stack the profile left and right sections vertically on smaller screens */
+    align-items: center;
+  }
+
+  .profile-left, .profile-right {
+    width: 100%; /* Take up full width on small screens */
+  }
+
+  .tabs button {
+    font-size: 14px; /* Reduce font size on smaller screens */
+    padding: 8px 16px;
+  }
+
+  .course-info, .user-info, .password-change {
+    padding: 20px; /* Reduce padding on small screens */
+  }
+
+  .course-info h2, .user-info h2, .password-change h2 {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .course-info label, .user-info label, .password-change label {
+    font-size: 14px; /* Adjust label font size */
+  }
+
+  .course-info input[type="text"], 
+  .course-info input[type="date"],
+  .course-info input[type="number"],
+  .user-info input[type="text"], 
+  .user-info input[type="email"],
+  .user-info input[type="tel"],
+  .password-change input[type="password"] {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  .course-info button,
+  .user-info button,
+  .password-change button {
+    padding: 10px 15px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs button {
+    font-size: 12px; /* Even smaller font size on very small screens */
+    padding: 6px 12px;
+  }
+
+  .course-info, .user-info, .password-change {
+    padding: 10px; /* Reduce padding even more on extra small screens */
+  }
+
+  .course-info h2, .user-info h2, .password-change h2 {
+    font-size: 18px; /* Adjust font size further */
+  }
+}

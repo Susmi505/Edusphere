@@ -1,0 +1,161 @@
+/* For the main container */
+.main-container {
+    padding: 20px;
+}
+
+/* Category List Header */
+.list-category h3 {
+    color: #0F3460 !important;
+    margin-bottom: 25px;
+}
+
+/* Container for the header and button */
+.list-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.list-category button {
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #0F3460;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.list-category button:hover {
+    background-color: #0c2a47;
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #0F3460;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #0c2a47;
+}
+
+.pagination span {
+    margin: 0 10px;
+}
+
+/* Responsive Design for Tablet and Mobile */
+@media screen and (max-width: 1024px) {
+    .main-container {
+        padding: 20px;
+        width: 100%;
+    }
+    .list-category {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .list-category h3 {
+        font-size: 22px; /* Adjust font size for tablet */
+        margin-bottom: 15px;
+    }
+/* 
+    .list-category button {
+        width: 100%; 
+        margin-top: 10px;
+    } */
+
+    .pagination {
+        flex-direction: column; /* Stack pagination buttons vertically */
+        align-items: flex-start;
+    }
+
+    .pagination button {
+        width: 100%; /* Make pagination buttons full-width */
+        margin: 5px 0;
+    }
+}
+
+/* Mobile responsiveness (Small devices) */
+@media screen and (max-width: 768px) {
+    /* .main-container {
+        padding: 20px;
+        width: 120%;
+    } */
+    .list-category {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .list-category h3 {
+        font-size: 20px; 
+        margin-bottom: 15px;
+    }
+
+    /* .list-category button {
+        width: 100%; 
+        padding: 12px 18px;
+        font-size: 16px; 
+    } */
+
+    .pagination {
+        flex-direction: column; /* Stack pagination buttons vertically */
+        align-items: flex-start;
+    }
+
+    .pagination button {
+        width: 100%; /* Make pagination buttons full-width */
+        margin: 5px 0;
+        padding: 12px 18px; /* Adjust padding */
+    }
+
+    .pagination span {
+        font-size: 16px;
+    }
+}
+
+/* Mobile view (Very small devices) */
+@media screen and (max-width: 480px) {
+    .main-container {
+        /* padding: 20px; */
+        width: 100%;
+    }
+    .list-category h3 {
+        font-size: 18px; /* Reduce font size further for very small screens */
+        margin-bottom: 10px; /* Adjust margin */
+    }
+/* 
+    .list-category button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 15px; 
+    } */
+
+    .pagination {
+        flex-direction: column; /* Stack pagination buttons vertically */
+        align-items: center;
+    }
+
+    .pagination button {
+        font-size: 14px; /* Smaller pagination buttons */
+        padding: 10px 15px; /* Adjust padding */
+    }
+
+    .pagination span {
+        font-size: 14px;
+        margin-bottom: 10px; /* Adjust space between pages */
+    }
+}

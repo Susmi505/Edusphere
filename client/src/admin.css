@@ -1,0 +1,424 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1d2634;
+    color: #9e9ea4;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .icon {
+    text-align: end;
+    line-height: 1px;
+
+    font-size: 30px;
+    color: #0F3460;
+    margin-right: 5px; 
+  }
+  
+  .icon_header {
+    line-height: 1px;
+    font-size: 26px;
+    margin-right: 5px; 
+  }
+  
+  /* Close Icon Styling */
+  .close_icon {
+    color: #0F3460;
+    margin-left: 30px;
+    margin-bottom: 100px;
+    font-size: medium;
+    cursor: pointer;
+  }
+  
+  /* Grid Layout for Page */
+.grid-container {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas:
+    'sidebar header header header'
+    'sidebar main main main';
+  height: 100vh;
+}
+
+/* Header Styling */
+.header {
+  grid-area: header;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  padding: 0 20px;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+  background-color: #fff; 
+}
+
+/* Right Side - Logout Button */
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;  /* Align content to the right */
+}
+
+/* Styling for Sign Out Button */
+.logout-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 5px 15px;
+  font-size: 16px;
+  background-color: #0F3460;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-button:hover {
+  background-color: #0d2a42;
+}
+
+/* Add padding for the icons to space them properly */
+.logout-button .icon {
+  font-size: 20px; /* Adjust icon size */
+  margin-right: 8px;  /* Space between icon and text */
+}
+  .menu-icon {
+    display: none;
+  }
+
+  .main-title h3{
+    color:#000000 !important;
+  }
+  
+  /* End Header  */
+  
+  /* Sidebar  */
+
+ .logo img{
+    width: 60%;
+  }
+
+  #sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    background-color:#e5e7eb;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  
+  .sidebar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 0px 30px;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-title > span {
+    display: none;
+  }
+  
+  .sidebar-brand {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .sidebar-list {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .sidebar-list-item {
+    display: flex; 
+    padding: 15px 20px;
+    font-size: 18px;
+    align-items: center; 
+  }
+  
+  .sidebar-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  
+  .sidebar-list-item > a {
+    text-decoration: none;
+    color: #0F3460;
+    display: flex; 
+    font-size: 1.3rem;
+    align-items: center;
+    margin-left: 30px; 
+  }
+
+  
+  .icon {
+    margin-right: 10px; 
+    align-items: center;
+  }
+  
+  
+  .sidebar-responsive {
+    display: inline !important;
+    position: absolute;
+    z-index: 12 !important;
+  }
+  
+  /* End Sidebar  */
+  
+  
+  /* Main  */  
+  .main-container {
+    grid-area: main;
+    overflow-y: auto;
+    padding: 20px 20px;
+    color: rgba(255, 255, 255, 0.95);
+  }
+  
+  .main-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .main-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 15px 0;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+  
+  .card:first-child {
+    background-color: #2962ff;
+  }
+  
+  .card:nth-child(2) {
+    background-color: #ff6d00;
+  }
+  
+  .card:nth-child(3) {
+    background-color: #2e7d32;
+  }
+  
+  .card:nth-child(4) {
+    background-color: #d50000;
+  }
+  
+  .card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card-inner > .card_icon {
+    font-size: 25px;
+    color: whitesmoke !important;
+  }
+  .card h1, h3{
+    color: whitesmoke !important;
+  }
+
+  .charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 60px;
+    height: 300px;
+  }
+  .charts .chart-item h3 {
+    color: #ff6d00 !important;
+    text-align: center;
+  }
+  .drop {
+    border: 2px solid #0F3460;
+  }
+  .drop option{
+    background-color: #0F3460;
+    color: white;
+  }
+  
+  
+  /* End Main  */
+  
+   /* For larger screens (1024px and below) */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      'header'
+      'main';
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  #sidebar {
+    width: 28%;
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline;
+  }
+
+  .sidebar-title > span {
+    display: inline;
+  }
+}
+
+/* For medium screens (992px and below) */
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      'header'
+      'main';
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  #sidebar {
+    width: 32%;
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline;
+  }
+
+  .sidebar-title > span {
+    display: inline;
+  }
+}
+
+/* For smaller screens (768px and below) */
+@media (max-width: 768px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  #sidebar {
+    width: 42%;
+    display: none; /* Hide sidebar on mobile */
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .pagination {
+    flex-direction: column; /* Stack pagination items vertically */
+    gap: 10px;
+  }
+}
+
+
+/* For very small screens (500px and below) */
+@media (max-width: 500px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  #sidebar {
+    width: 50%;
+    display: none; /* Hide sidebar on mobile */
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .pagination {
+    flex-direction: column; /* Stack pagination items vertically */
+    gap: 10px;
+  }
+}
+
+/* For extra small screens (576px and below) */
+@media screen and (max-width: 576px) {
+  .hedaer-left {
+    display: none; 
+  }
+  
+  #sidebar {
+    width: 60%; 
+    display: none; 
+  }
+
+  /* Pagination should fit the screen better */
+  .pagination {
+    flex-direction: column; /* Stack pagination items vertically */
+    gap: 10px;
+  }
+}
+
+.pagination {
+  color: black;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+/* For extra small screens (480px and below) */
+@media (max-width: 480px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  #sidebar {
+    width: 60%; 
+    display: none; 
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+
+  .pagination {
+    flex-direction: column; /* Stack pagination items vertically */
+    gap: 10px;
+  }
+
+  /* Adjustments to the header */
+  .hedaer-left {
+    display: none; /* Hide logo/left part of header */
+  }
+}
+
+/* For very small screens like iPhone SE (375px wide) */
+@media (max-width: 375px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  #sidebar {
+    width: 50%; 
+    
+  }  
+}
+
+
